@@ -5,4 +5,4 @@ import Post from './Post';
 import Project from './Project';
 import SinglePost from './SinglePost';
 
-export default { About, Home, NavBar, Post, Project, SinglePost };
+export { About, Home, NavBar, Post, Project, SinglePost };

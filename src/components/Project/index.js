@@ -6,8 +6,8 @@ import * as DM from './dataManager';
 export default function Project() {
   const [projectData, setProjectData] = useState(null);
 
-  useEffect(async () => {
-    await DM.getAllProjectService()
+  useEffect(() => {
+    DM.getAllProjectService()
       .then((res) => {
         setProjectData(res);
       })

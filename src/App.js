@@ -1,15 +1,15 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 //Components
-import Components from './components'
+import * as Components from './components';
 
 //Constants
-import {ROUTES}  from './constants'
+import { ROUTES } from './constants';
 
 function App() {
   return (
     <BrowserRouter>
-    <Components.NavBar />    
+      <Components.NavBar />
       <Switch>
         <Route exact component={Components.Home} path={ROUTES.HOME} />
         <Route component={Components.About} path={ROUTES.ABOUT} />

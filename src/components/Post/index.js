@@ -10,8 +10,8 @@ import { ROUTES } from '../../constants';
 export default function Post() {
   const [postData, setPostData] = useState(null);
 
-  useEffect(async () => {
-    await DM.getAllPostService()
+  useEffect(() => {
+    DM.getAllPostService()
       .then((res) => {
         setPostData(res);
       })
